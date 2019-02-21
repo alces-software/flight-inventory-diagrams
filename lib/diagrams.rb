@@ -1,4 +1,3 @@
-# coding: utf-8
 #==============================================================================
 # Copyright (C) 2019-present Alces Flight Ltd.
 #
@@ -25,27 +24,6 @@
 # For more information on Flight Inventory Diagrams, please visit:
 # https://github.com/alces-software/flight-inventory-diagrams
 #===============================================================================
-$: << File.join(__FILE__,'..','..','lib')
-require 'base64'
-require 'victor'
-require 'diagrams'
-
-def render_switch(opts)
-  map = @node_data.mutable.map&.to_h
-  return "" if map.nil?
-  opts = Diagrams::Options.new(opts, map)
-
-  names = []
-  map.each do |k,v|
-    name, type = v.split(':')
-    name = name.length > opts.truncate_at ? name[0..opts.truncate_at] + "…" : name
-    names[k-1] = [name, type].join(':')
-  end
-
-  layout = Diagrams::Layout.new(opts)
-  Diagrams::Style.new(opts.style_opts).render(layout, names).render
-end
-
-def render_switch_base64(*args)
-  Base64.strict_encode64(render_switch(*args))
-end
+require 'diagrams/layout'
+require 'diagrams/options'
+require 'diagrams/style'

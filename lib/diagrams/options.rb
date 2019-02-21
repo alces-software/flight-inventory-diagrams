@@ -1,4 +1,3 @@
-# coding: utf-8
 #==============================================================================
 # Copyright (C) 2019-present Alces Flight Ltd.
 #
@@ -25,27 +24,48 @@
 # For more information on Flight Inventory Diagrams, please visit:
 # https://github.com/alces-software/flight-inventory-diagrams
 #===============================================================================
-$: << File.join(__FILE__,'..','..','lib')
-require 'base64'
-require 'victor'
-require 'diagrams'
+module Diagrams
+  class Options
+    attr_accessor :width, :height, :layout, :truncate_at, :style_opts, :first_num
 
-def render_switch(opts)
-  map = @node_data.mutable.map&.to_h
-  return "" if map.nil?
-  opts = Diagrams::Options.new(opts, map)
+    def initialize(opts, map)
+      @width = (Integer(opts[:width]) || nil) rescue nil
+      @height = (Integer(opts.fetch(:height)) || 1) rescue nil
+      @truncate_at = opts.fetch(:truncate_at, 9)
 
-  names = []
-  map.each do |k,v|
-    name, type = v.split(':')
-    name = name.length > opts.truncate_at ? name[0..opts.truncate_at] + "…" : name
-    names[k-1] = [name, type].join(':')
+      if @width.nil?
+        @width = map.keys.max
+        if @width > 16
+          @height = (@width / 16) + 1
+          @width = 16
+        end
+      end
+
+      layout = opts.fetch(:layout) || 't-l-h'
+      @layout = layout.split('-').map do |e|
+        case e
+        when 't'
+          :top
+        when 'b'
+          :bottom
+        when 'l'
+          :left
+        when 'r'
+          :right
+        when 'h'
+          :horizontal
+        when 'v'
+          :vertical
+        else
+          raise "Unrecognized layout atom: #{e} (#{port_layout})"
+        end
+      end
+
+      @style_opts = {
+        name_colours: {switch: :green, bmc: :purple}
+      }.merge(opts.fetch(:style, {}))
+
+      @first_num = opts.fetch(:first_num, 1)
+    end
   end
-
-  layout = Diagrams::Layout.new(opts)
-  Diagrams::Style.new(opts.style_opts).render(layout, names).render
-end
-
-def render_switch_base64(*args)
-  Base64.strict_encode64(render_switch(*args))
 end
