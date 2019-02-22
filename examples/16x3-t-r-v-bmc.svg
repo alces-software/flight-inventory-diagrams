@@ -1,0 +1,350 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="948.75" height="481.25" style="background:#fff" 
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+<rect x="0" y="0" width="948.75" height="481.25" fill="#ddd"/>
+<rect x="10" y="10.0" width="885" height="60" rx="10" fill="#666"/>
+<rect x="15" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="40" y="50.0" font-size="30" fill="white" font-family="times">
+46
+</text>
+<text text-anchor="left" x="15" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 15 87.0)">
+node22
+</text>
+<rect x="70" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="95" y="50.0" font-size="30" fill="white" font-family="times">
+43
+</text>
+<text text-anchor="left" x="70" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 70 87.0)">
+node19
+</text>
+<rect x="125" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="150" y="50.0" font-size="30" fill="white" font-family="times">
+40
+</text>
+<text text-anchor="left" x="125" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 125 87.0)">
+node16
+</text>
+<rect x="180" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="205" y="50.0" font-size="30" fill="white" font-family="times">
+37
+</text>
+<text text-anchor="left" x="180" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 180 87.0)">
+node13
+</text>
+<rect x="235" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="260" y="50.0" font-size="30" fill="white" font-family="times">
+34
+</text>
+<text text-anchor="left" x="235" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 235 87.0)">
+node10
+</text>
+<rect x="290" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="315" y="50.0" font-size="30" fill="white" font-family="times">
+31
+</text>
+<text text-anchor="left" x="290" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 290 87.0)">
+node07
+</text>
+<rect x="345" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="370" y="50.0" font-size="30" fill="white" font-family="times">
+28
+</text>
+<text text-anchor="left" x="345" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 345 87.0)">
+node04
+</text>
+<rect x="400" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="425" y="50.0" font-size="30" fill="white" font-family="times">
+25
+</text>
+<text text-anchor="left" x="400" y="87.0" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 400 87.0)">
+node01
+</text>
+<rect x="455" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="480" y="50.0" font-size="30" fill="white" font-family="times">
+22
+</text>
+<text text-anchor="left" x="455" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 455 87.0)">
+node22
+</text>
+<rect x="510" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="535" y="50.0" font-size="30" fill="white" font-family="times">
+19
+</text>
+<text text-anchor="left" x="510" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 510 87.0)">
+node19
+</text>
+<rect x="565" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="590" y="50.0" font-size="30" fill="white" font-family="times">
+16
+</text>
+<text text-anchor="left" x="565" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 565 87.0)">
+node16
+</text>
+<rect x="620" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="645" y="50.0" font-size="30" fill="white" font-family="times">
+13
+</text>
+<text text-anchor="left" x="620" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 620 87.0)">
+node13
+</text>
+<rect x="675" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="700" y="50.0" font-size="30" fill="white" font-family="times">
+10
+</text>
+<text text-anchor="left" x="675" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 675 87.0)">
+node10
+</text>
+<rect x="730" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="755" y="50.0" font-size="30" fill="white" font-family="times">
+7
+</text>
+<text text-anchor="left" x="730" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 730 87.0)">
+node07
+</text>
+<rect x="785" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="810" y="50.0" font-size="30" fill="white" font-family="times">
+4
+</text>
+<text text-anchor="left" x="785" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 785 87.0)">
+node04
+</text>
+<rect x="840" y="15.0" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="865" y="50.0" font-size="30" fill="white" font-family="times">
+1
+</text>
+<text text-anchor="left" x="840" y="87.0" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 840 87.0)">
+node01
+</text>
+<rect x="10" y="163.75" width="885" height="60" rx="10" fill="#666"/>
+<rect x="15" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="40" y="203.75" font-size="30" fill="white" font-family="times">
+47
+</text>
+<text text-anchor="left" x="15" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 15 240.75)">
+node23
+</text>
+<rect x="70" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="95" y="203.75" font-size="30" fill="white" font-family="times">
+44
+</text>
+<text text-anchor="left" x="70" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 70 240.75)">
+node20
+</text>
+<rect x="125" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="150" y="203.75" font-size="30" fill="white" font-family="times">
+41
+</text>
+<text text-anchor="left" x="125" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 125 240.75)">
+node17
+</text>
+<rect x="180" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="205" y="203.75" font-size="30" fill="white" font-family="times">
+38
+</text>
+<text text-anchor="left" x="180" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 180 240.75)">
+node14
+</text>
+<rect x="235" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="260" y="203.75" font-size="30" fill="white" font-family="times">
+35
+</text>
+<text text-anchor="left" x="235" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 235 240.75)">
+node11
+</text>
+<rect x="290" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="315" y="203.75" font-size="30" fill="white" font-family="times">
+32
+</text>
+<text text-anchor="left" x="290" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 290 240.75)">
+node08
+</text>
+<rect x="345" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="370" y="203.75" font-size="30" fill="white" font-family="times">
+29
+</text>
+<text text-anchor="left" x="345" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 345 240.75)">
+node05
+</text>
+<rect x="400" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="425" y="203.75" font-size="30" fill="white" font-family="times">
+26
+</text>
+<text text-anchor="left" x="400" y="240.75" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 400 240.75)">
+node02
+</text>
+<rect x="455" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="480" y="203.75" font-size="30" fill="white" font-family="times">
+23
+</text>
+<text text-anchor="left" x="455" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 455 240.75)">
+node23
+</text>
+<rect x="510" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="535" y="203.75" font-size="30" fill="white" font-family="times">
+20
+</text>
+<text text-anchor="left" x="510" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 510 240.75)">
+node20
+</text>
+<rect x="565" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="590" y="203.75" font-size="30" fill="white" font-family="times">
+17
+</text>
+<text text-anchor="left" x="565" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 565 240.75)">
+node17
+</text>
+<rect x="620" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="645" y="203.75" font-size="30" fill="white" font-family="times">
+14
+</text>
+<text text-anchor="left" x="620" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 620 240.75)">
+node14
+</text>
+<rect x="675" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="700" y="203.75" font-size="30" fill="white" font-family="times">
+11
+</text>
+<text text-anchor="left" x="675" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 675 240.75)">
+node11
+</text>
+<rect x="730" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="755" y="203.75" font-size="30" fill="white" font-family="times">
+8
+</text>
+<text text-anchor="left" x="730" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 730 240.75)">
+node08
+</text>
+<rect x="785" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="810" y="203.75" font-size="30" fill="white" font-family="times">
+5
+</text>
+<text text-anchor="left" x="785" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 785 240.75)">
+node05
+</text>
+<rect x="840" y="168.75" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="865" y="203.75" font-size="30" fill="white" font-family="times">
+2
+</text>
+<text text-anchor="left" x="840" y="240.75" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 840 240.75)">
+node02
+</text>
+<rect x="10" y="317.5" width="885" height="60" rx="10" fill="#666"/>
+<rect x="15" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="40" y="357.5" font-size="30" fill="white" font-family="times">
+48
+</text>
+<text text-anchor="left" x="15" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 15 394.5)">
+node24
+</text>
+<rect x="70" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="95" y="357.5" font-size="30" fill="white" font-family="times">
+45
+</text>
+<text text-anchor="left" x="70" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 70 394.5)">
+node21
+</text>
+<rect x="125" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="150" y="357.5" font-size="30" fill="white" font-family="times">
+42
+</text>
+<text text-anchor="left" x="125" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 125 394.5)">
+node18
+</text>
+<rect x="180" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="205" y="357.5" font-size="30" fill="white" font-family="times">
+39
+</text>
+<text text-anchor="left" x="180" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 180 394.5)">
+node15
+</text>
+<rect x="235" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="260" y="357.5" font-size="30" fill="white" font-family="times">
+36
+</text>
+<text text-anchor="left" x="235" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 235 394.5)">
+node12
+</text>
+<rect x="290" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="315" y="357.5" font-size="30" fill="white" font-family="times">
+33
+</text>
+<text text-anchor="left" x="290" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 290 394.5)">
+node09
+</text>
+<rect x="345" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="370" y="357.5" font-size="30" fill="white" font-family="times">
+30
+</text>
+<text text-anchor="left" x="345" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 345 394.5)">
+node06
+</text>
+<rect x="400" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="425" y="357.5" font-size="30" fill="white" font-family="times">
+27
+</text>
+<text text-anchor="left" x="400" y="394.5" font-size="25" fill="purple" font-family="arial black" transform="translate(12 0) rotate(45 400 394.5)">
+node03
+</text>
+<rect x="455" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="480" y="357.5" font-size="30" fill="white" font-family="times">
+24
+</text>
+<text text-anchor="left" x="455" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 455 394.5)">
+node24
+</text>
+<rect x="510" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="535" y="357.5" font-size="30" fill="white" font-family="times">
+21
+</text>
+<text text-anchor="left" x="510" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 510 394.5)">
+node21
+</text>
+<rect x="565" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="590" y="357.5" font-size="30" fill="white" font-family="times">
+18
+</text>
+<text text-anchor="left" x="565" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 565 394.5)">
+node18
+</text>
+<rect x="620" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="645" y="357.5" font-size="30" fill="white" font-family="times">
+15
+</text>
+<text text-anchor="left" x="620" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 620 394.5)">
+node15
+</text>
+<rect x="675" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="700" y="357.5" font-size="30" fill="white" font-family="times">
+12
+</text>
+<text text-anchor="left" x="675" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 675 394.5)">
+node12
+</text>
+<rect x="730" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="755" y="357.5" font-size="30" fill="white" font-family="times">
+9
+</text>
+<text text-anchor="left" x="730" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 730 394.5)">
+node09
+</text>
+<rect x="785" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="810" y="357.5" font-size="30" fill="white" font-family="times">
+6
+</text>
+<text text-anchor="left" x="785" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 785 394.5)">
+node06
+</text>
+<rect x="840" y="322.5" width="50" height="50" rx="10" fill="#000"/>
+<text text-anchor="middle" x="865" y="357.5" font-size="30" fill="white" font-family="times">
+3
+</text>
+<text text-anchor="left" x="840" y="394.5" font-size="25" fill="#5588cc" font-family="arial black" transform="translate(12 0) rotate(45 840 394.5)">
+node03
+</text>
+
+</svg>
