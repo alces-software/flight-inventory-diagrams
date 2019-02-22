@@ -26,19 +26,18 @@
 #===============================================================================
 module Diagrams
   class Layout
-    attr_accessor :width, :height, :direction, :origin_row, :origin_col, :first
-    def initialize(opts)
-      #width, height, origin_row, origin_col, direction, first = 1)
-      @width = opts.width
-      @height = opts.height
-      @origin_row = opts.layout[0]
-      @origin_col = opts.layout[1]
-      @direction = opts.layout[2]
-      @first = opts.first_num
+    attr_accessor :width, :height, :direction, :origin_row, :origin_col, :first_port_num
+    def initialize(width, height, origin_row, origin_col, direction, first_port_num = 1)
+      @width = width
+      @height = height
+      @origin_row = origin_row
+      @origin_col = origin_col
+      @direction = direction
+      @first_port_num = first_port_num
     end
 
     def port_label_for(num)
-      num + first
+      num + first_port_num
     end
 
     def port_number_for(x, y)

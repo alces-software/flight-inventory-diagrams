@@ -27,23 +27,11 @@
 #===============================================================================
 $: << File.join(__FILE__,'..','..','lib')
 require 'base64'
-require 'victor'
-require 'diagrams'
+require 'diagrams/renderer'
 
 def render_switch(opts)
   map = @node_data.mutable.map&.to_h
-  return "" if map.nil?
-  opts = Diagrams::Options.new(opts, map)
-
-  names = []
-  map.each do |k,v|
-    name, type = v.split(':')
-    name = name.length > opts.truncate_at ? name[0..opts.truncate_at] + "…" : name
-    names[k-1] = [name, type].join(':')
-  end
-
-  layout = Diagrams::Layout.new(opts)
-  Diagrams::Style.new(opts.style_opts).render(layout, names).render
+  Diagrams::Renderer.render(opts, map)
 end
 
 def render_switch_base64(*args)

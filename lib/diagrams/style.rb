@@ -24,15 +24,14 @@
 # For more information on Flight Inventory Diagrams, please visit:
 # https://github.com/alces-software/flight-inventory-diagrams
 #===============================================================================
-# for a switch
-# one rectangle outer
-# multiple rectangles inner to represent ports
-# text attached to each port
 module Diagrams
   class Style
     attr_accessor :port_width, :port_height, :padding
     attr_accessor :margin, :radius, :unit_colour
     attr_accessor :bg_colour, :port_colour
+    attr_accessor :port_font_size, :name_font_size
+    attr_accessor :name_pad_factor, :name_colour
+    attr_accessor :name_colours
     def initialize(opts = {})
       @port_width = opts.fetch(:port_width, 50)
       @port_height = opts.fetch(:port_height, 50)
@@ -46,7 +45,6 @@ module Diagrams
       @name_font_size = opts.fetch(:name_font_size, 25)
       @name_pad_factor = opts.fetch(:name_pad_factor, (@name_font_size/16.0)*10)
       @name_colour = opts.fetch(:name_colour, '#5588cc')
-      @template = opts.fetch(:embed, false) ? :html : :default
       @name_colours = {
         default: @name_colour
       }.merge(opts.fetch(:name_colours, {}))
@@ -78,101 +76,6 @@ module Diagrams
       end
       max_len = max_name_length(last_names.compact)
       [(max_len * @name_pad_factor) - @port_width, 0].max
-    end
-
-    def render_unit(svg, row_pos, num_ports)
-      unit_width = (port_width_with_padding * num_ports) + @padding
-      svg.rect(
-        x: @margin,
-        y: @margin + row_pos,
-        width: unit_width,
-        height: unit_height,
-        rx: @radius,
-        fill: @unit_colour
-      )
-    end
-
-    def render_port(svg, row_pos, port_pos, port_num)
-      svg.rect(
-        x: @margin + @padding + port_pos,
-        y: @margin + @padding + row_pos,
-        width: @port_width,
-        height: @port_height,
-        rx: @radius,
-        fill: @port_colour
-      )
-      svg.text(
-        port_num.to_s,
-        text_anchor: :middle,
-        x: @margin + @padding + (@port_width/2) + port_pos,
-        y: @margin + @padding + (@port_height/2) + (@port_font_size/3) + row_pos,
-        font_size: @port_font_size,
-        fill: :white,
-        font_family: 'times'
-      )
-    end
-
-    def render_label(svg, row_pos, port_pos, label)
-      x = @margin + @padding + port_pos
-      y = @margin + unit_height + @padding + row_pos + (@name_font_size/2)
-      text, type = label.split(':')
-      type = type&.to_sym
-      colour =
-        case type
-        when Symbol
-          @name_colours.fetch(type, :black)
-        else
-          @name_colours.fetch(:default, :black)
-        end
-      svg.text(
-        text,
-        text_anchor: :left,
-        x: x,
-        y: y,
-        font_size: @name_font_size,
-        fill: colour,
-        font_family: 'arial black',
-        transform: "translate(#{@port_width / 4} 0) rotate(45 #{x} #{y})"
-      )
-    end
-
-    def create_canvas(num_ports, num_rows, row_height, padding_right)
-      w = (port_width_with_padding * num_ports) + (@margin * 2) + @padding + padding_right
-      h = (row_height * num_rows) + (@margin * 2)
-      Victor::SVG.new(
-        width: w,
-        height: h,
-        style: { background: '#fff' },
-        template: @template,
-      ).tap do |svg|
-        svg.rect(
-          x: 0,
-          y: 0,
-          width: w,
-          height: h,
-          fill: @bg_colour
-        )
-      end
-    end
-
-    def render(layout, names)
-      row_height = row_height_for(names)
-      padding_right = padding_right_for(names, layout.height, layout.width)
-      create_canvas(layout.width, layout.height, row_height, padding_right).tap do |svg|
-        (0..(layout.height - 1)).each do |row|
-          row_pos = row * row_height
-          render_unit(svg, row_pos, layout.width)
-          (0..(layout.width-1)).each do |port|
-            port_pos = port * port_width_with_padding
-            port_num = layout.port_number_for(port, row)
-            port_label = layout.port_label_for(port_num)
-            render_port(svg, row_pos, port_pos, port_label)
-            if label = names[port_num]
-              render_label(svg, row_pos, port_pos, label)
-            end
-          end
-        end
-      end
     end
   end
 end
