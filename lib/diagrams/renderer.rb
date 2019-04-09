@@ -42,8 +42,8 @@ module Diagrams
     def initialize(opts, map)
       truncate_at = opts.fetch(:truncate_at, 9)
       @style = create_style(opts)
-      @layout = create_layout(opts)
       @names = create_name_array(map, truncate_at)
+      @layout = create_layout(opts)
     end
 
     def render(template = :default)
@@ -81,8 +81,7 @@ module Diagrams
 
     def create_name_array(map, truncate_at)
       [].tap do |names|
-        break if map.nil?
-        map.each do |k,v|
+        (map || {}).each do |k,v|
           names[k-1] = truncated_name(v, truncate_at)
         end
       end
@@ -108,8 +107,10 @@ module Diagrams
       if w.nil?
         w = @names.length
         if w > 16
-          w = (w / 16) + 1
+          h = (w / 16) + 1
           w = 16
+        else
+          h = 1
         end
       end
       OpenStruct.new(width: w, height: h)
