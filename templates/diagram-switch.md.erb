@@ -30,9 +30,9 @@
 # <%= @node_data.name %>
 
 <img src="data:image/svg+xml;base64,<%= render_switch_base64(
-  width: @node_data.mutable.width,
-  height: @node_data.mutable.height,
-  layout: @node_data.mutable.layout,
+  width: @node_data.mutable.map_width,
+  height: @node_data.mutable.map_height,
+  layout: @node_data.mutable.map_layout,
 )%>">
 
 |Port|Note|

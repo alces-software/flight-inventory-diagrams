@@ -29,9 +29,9 @@ flight inventory modify map -c example-switch
 Set some layout parameters:
 
 ```
-flight inventory modify other layout=t-l-v example-switch
-flight inventory modify other width=24 example-switch
-flight inventory modify other height=2 example-switch
+flight inventory modify other map_layout=t-l-v example-switch
+flight inventory modify other map_width=24 example-switch
+flight inventory modify other map_height=2 example-switch
 ```
 
 Render an SVG representation of `example-switch`:
