@@ -60,11 +60,11 @@ provide a small number of configuration values:
  * `width`: number of ports wide
  * `height`: number of ports high
  * `layout`: port numbering method, one of:
-   * `t-l-v`: top-left is port 1, numbering proceeds vertically
-   * `t-l-h`: top-left is port 1, numbering proceeds horizontally
-   * `t-r-v`: top-right is port 1, numbering proceeds vertically (in reverse)
-   * `t-r-h`: top-right is port 1, numbering proceeds horizontally (in reverse)
-   * as above, but for `b-l-v`, `b-l-h` etc. where port 1 is at the bottom
+   * `t-l-v`: top-left is port 1, numbering proceeds vertically (down-then-right)
+   * `t-l-h`: top-left is port 1, numbering proceeds horizontally (right-then-down)
+   * `b-l-v`: bottom-left is port 1, numbering proceeds vertically (up-then-right)
+   * `b-l-h`: bottom-left is port 1, numbering proceeds horizontally (right-then-up)
+   * as above, but for `t-r-v`, `t-l-h` etc. where port 1 is on the right
 
 The diagram plugin has an additional number of configuration values
 which can be tweaked by the creation of a new template:
