@@ -46,19 +46,19 @@ class Template
     @template = File.read(File.join(TEMPLATE_DIR, "#{name}.erb"))
   end
 
-  def render(node_data)
-    env = render_env(node_data)
-    env.instance_variable_set(:@node_data, node_data)
+  def render(asset_data)
+    env = render_env(asset_data)
+    env.instance_variable_set(:@asset_data, asset_data)
     ctx = env.instance_eval { binding }
     ERB.new(@template, nil, '-').result(ctx)
   end
 
-  def render_env(node_data)
+  def render_env(asset_data)
     @render_env ||=
       begin
         Module.new do
           class << self
-            attr_reader :node_data
+            attr_reader :asset_data
           end
         end.tap do |m|
           Dir[File.join(HELPER_DIR,'*.rb')].each do |file|
@@ -121,7 +121,7 @@ markdown_tpl = Template.new('switch.md')
 svg_tpl = Template.new('switch.svg')
 
 LAYOUTS.each do |l|
-  node_data = NodeData.new(
+  asset_data = NodeData.new(
     {
       map: send("create_#{l[:map_type]}_map", l[:width], l[:height]),
       width: l[:width].to_s,
@@ -130,8 +130,8 @@ LAYOUTS.each do |l|
     }
   )
   title = "#{l[:width]}x#{l[:height]}-#{l[:layout]}-#{l[:map_type]}"
-  svg_out = svg_tpl.render(node_data)
+  svg_out = svg_tpl.render(asset_data)
   File.open("#{title}.svg",'w') { |f| f.puts(svg_out) }
-  md_out = markdown_tpl.render(node_data)
+  md_out = markdown_tpl.render(asset_data)
   File.open("#{title}.md",'w') { |f| f.puts(md_out) }
 end
