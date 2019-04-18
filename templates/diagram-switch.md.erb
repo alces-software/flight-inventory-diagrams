@@ -27,16 +27,16 @@
 # https://github.com/alces-software/flight-inventory-diagrams
 #===============================================================================
 -%>
-# <%= @node_data.name %>
+# <%= @asset_data.name %>
 
 <img src="data:image/svg+xml;base64,<%= render_switch_base64(
-  width: @node_data.mutable.width,
-  height: @node_data.mutable.height,
-  layout: @node_data.mutable.layout,
+  width: @asset_data.mutable.map_width,
+  height: @asset_data.mutable.map_height,
+  layout: @asset_data.mutable.map_layout,
 )%>">
 
 |Port|Note|
 |----|----|
-<% (@node_data.mutable.map || {}).to_h.each do |k,v| -%>
+<% (@asset_data.mutable.map || {}).to_h.each do |k,v| -%>
 |<%= k %>|<%= v %>|
 <% end %>

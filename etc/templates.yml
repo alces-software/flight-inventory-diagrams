@@ -1,6 +1,8 @@
 diagram-markdown:
-  default: diagram-switch.md.erb
+  default: server.md.erb
+  server: server.md.erb
   switch: diagram-switch.md.erb
 diagram-svg:
-  default: diagram-switch.svg.erb
+  default: server.md.erb
+  server: server.md.erb
   switch: diagram-switch.svg.erb

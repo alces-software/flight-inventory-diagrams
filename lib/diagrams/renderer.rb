@@ -40,7 +40,7 @@ module Diagrams
     end
 
     def initialize(opts, map)
-      truncate_at = opts.fetch(:truncate_at, 9)
+      truncate_at = opts.fetch(:truncate_at, 15)
       @style = create_style(opts)
       @names = create_name_array(map, truncate_at)
       @layout = create_layout(opts)

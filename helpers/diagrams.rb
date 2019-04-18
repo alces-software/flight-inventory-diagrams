@@ -29,7 +29,7 @@ require 'base64'
 require 'diagrams/renderer'
 
 def render_switch(opts)
-  map = @node_data.mutable.map&.to_h
+  map = @asset_data.mutable.map&.to_h
   Diagrams::Renderer.render(opts, map)
 end
 
