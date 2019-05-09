@@ -28,8 +28,7 @@ $: << File.join(__FILE__,'..','..','lib')
 require 'base64'
 require 'diagrams/renderer'
 
-def render_switch(opts)
-  map = @asset_data.mutable.map&.to_h
+def render_switch(map, opts)
   Diagrams::Renderer.render(opts, map)
 end
 
