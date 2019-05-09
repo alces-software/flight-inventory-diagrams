@@ -29,14 +29,20 @@
 -%>
 # <%= @asset_data.name %>
 
+<% @asset_had['mutable']['maps'].each do |map| %>
+
+## <%= map.first %>
+
 <img src="data:image/svg+xml;base64,<%= render_switch_base64(
-  width: @asset_data.mutable.map_width,
-  height: @asset_data.mutable.map_height,
-  layout: @asset_data.mutable.map_layout,
+  map[1]['map'],
+  width: map[1]['map_width'],
+  height: map[1]['map_height'],
+  layout: map[1]['map_layout'],
 )%>">
 
 |Port|Note|
 |----|----|
-<% (@asset_data.mutable.map || {}).to_h.each do |k,v| -%>
+<% (map[1]['map'] || {}).to_h.each do |k,v| -%>
 |<%= k %>|<%= v %>|
+<% end %>
 <% end %>
